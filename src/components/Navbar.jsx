@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
   return (
-    <div className='flex gap-5 flex-col min-[400px]:flex-row justify-between md:items-center px-[15vw] py-10 sm:px-[5vw] lg:px-[7vw] sm:py-8 lg:py-12 text-[16px] lg:text-[18px] items-start'>
+    <div className='flex gap-5 flex-col min-[400px]:flex-row justify-between md:items-center py-[5vw]   sm:py-8 lg:py-12 text-[16px] lg:text-[18px] items-start'>
       <img className='w-35 lg:w-50 flex flex-nowrap' src="/navlogo.png" alt="img" />
       <div className='flex flex-col md:flex-row md:items-center gap-7 md:gap-[2vw] '>
       <ul className='sm:flex hidden items-center gap-4 md:gap-[1.7vw] lg:gap-[2.5vw] '>
