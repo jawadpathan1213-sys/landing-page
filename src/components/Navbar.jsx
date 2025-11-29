@@ -8,11 +8,11 @@ const Navbar = () => {
       <img className='w-35 lg:w-50 flex flex-nowrap' src="/navlogo.png" alt="img" />
       <div className='flex flex-col md:flex-row md:items-center gap-7 md:gap-[2vw] '>
       <ul className='sm:flex hidden items-center gap-4 md:gap-[1.7vw] lg:gap-[2.5vw] '>
-        <li className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>About us</li>
-        <li className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Services</li>
-        <li className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Use Cases</li>
-        <li className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Pricings</li>
-        <li className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Blogs</li>
+        <a href='#about' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>About us</a>
+        <a href='#services' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Services</a>
+        <a className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Use Cases</a>
+        <a className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Pricings</a>
+        <a className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Blogs</a>
       </ul>
       <button className='py-2 px-3 lg:py-3 lg:px-7 border rounded-xl hover:bg-black hover:text-white transition-all ease-in'>Request a quote</button>
       </div>

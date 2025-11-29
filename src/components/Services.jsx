@@ -3,7 +3,7 @@ import { FaArrowCircleUp } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className='mt-5 sm:mt-20'>
+    <div className='mt-5 sm:mt-20' id="services">
       <div className='flex flex-col sm:flex-row gap-4 sm:gap-5 md:gap-7 lg:gap-10 items-center '>
         <h1 className='bg-[#B9FF66] text-2xl sm:text-3xl w-fit px-1 rounded-[5px]'>
           Services
@@ -16,7 +16,7 @@ const Services = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 sm:mt-15 mb-10 gap-[10vw] sm:gap-[5vw]'>
         {/* 1111111111111111111111111111111111111111111 */}
 
-        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 flex justify-between items-center bg-[#F3F3F3]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
+        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-4 sm:p-10 flex justify-between items-center bg-[#F3F3F3]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
           <div className='flex flex-col  max-[400px]:w-full '>
             <h1 className='text-xl bg-[#B9FF66] w-fit font-medium px-1 rounded-[5px]'>
               Search Engine
@@ -46,7 +46,7 @@ const Services = () => {
 
         {/* 2222222222222222222222222 */}
 
-        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 flex justify-between items-center bg-[#B9FF66]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
+        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 sm:p-10 flex justify-between items-center bg-[#B9FF66]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
           <div className='flex flex-col  max-[400px]:w-full '>
             <h1 className='text-xl bg-white w-fit font-medium px-1 rounded-[5px]'>
               pay-per-click
@@ -76,7 +76,7 @@ const Services = () => {
 
         {/* 33333333333333 */}
 
-        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 flex justify-between items-center bg-[#191A23]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
+        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 sm:p-10 flex justify-between items-center bg-[#191A23]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
           <div className='flex flex-col  max-[400px]:w-full '>
             <h1 className='text-xl bg-white w-fit font-medium px-1 rounded-[5px]'>
               Social Media
@@ -106,7 +106,7 @@ const Services = () => {
 
         {/* 44444444444444444444444444444444444  */}
 
-        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 flex justify-between items-center bg-[#F3F3F3]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
+        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 sm:p-10 flex justify-between items-center bg-[#F3F3F3]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
           <div className='flex flex-col  max-[400px]:w-full '>
             <h1 className='text-xl bg-[#B9FF66] w-fit font-medium px-1 rounded-[5px]'>
               Email
@@ -135,7 +135,7 @@ const Services = () => {
         </div>
 
         {/* 5555555555555555555555555555 */}
-        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 flex justify-between items-center bg-[#B9FF66]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
+        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 sm:p-10 flex justify-between items-center bg-[#B9FF66]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
           <div className='flex flex-col  max-[400px]:w-full '>
             <h1 className='text-xl bg-white w-fit font-medium px-1 rounded-[5px]'>
               Content
@@ -165,12 +165,12 @@ const Services = () => {
 
         {/* 66666666666666666666 */}
 
-        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-5 flex justify-between items-center bg-[#191A23]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
+        <div className='w-auto border rounded-4xl h-70 min-[400px]:h-50  p-4 sm:p-10 flex justify-between items-center bg-[#191A23]  shadow-black shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)]'>
           <div className='flex flex-col  max-[400px]:w-full '>
-            <h1 className='text-xl bg-white w-fit font-medium px-1 rounded-[5px]'>
+            <h1 className='text-xl  bg-[#B9FF66] w-fit font-medium px-1 rounded-[5px]'>
               Analytics and
             </h1>
-            <h1 className='text-xl bg-white w-fit font-medium px-1 rounded-[5px]'>
+            <h1 className='text-xl bg-[#B9FF66] w-fit font-medium px-1 rounded-[5px]'>
               Tracking
             </h1>
             <img
