@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -8,7 +7,7 @@ const Services = () => {
         <h1 className='bg-[#B9FF66] text-2xl sm:text-3xl w-fit px-1 rounded-[5px]'>
           Services
         </h1>
-        <p className='leading-[17px] max-w-[500px]'>
+        <p className='leading-[17px] max-w-[500px] text-center sm:text-start'>
           At our digital marketing agency, we offer a range of services to help
           businesses grow and succeed online. These services include:
         </p>

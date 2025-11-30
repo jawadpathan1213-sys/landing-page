@@ -10,20 +10,20 @@ const Navbar = () => {
       <ul className='sm:flex hidden items-center gap-4 md:gap-[1.7vw] lg:gap-[2.5vw] '>
         <a href='#about' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>About us</a>
         <a href='#services' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Services</a>
-        <a className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Use Cases</a>
-        <a className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Pricings</a>
-        <a className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Blogs</a>
+        <a href='#usecases' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Use Cases</a>
+        <a href='#testimonials' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Testimonials</a>
+        <a href='#contact' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Contact us</a>
       </ul>
       <button className='py-2 px-3 lg:py-3 lg:px-7 border rounded-xl hover:bg-black hover:text-white transition-all ease-in'>Request a quote</button>
       </div>
       <div className='fixed sm:hidden'>
         <FaBars onClick={() => setNav(!nav)} className='fixed right-3 cursor-pointer rounded-full bg-gray-100 p-2 hover:bg-gray-300 w-8 h-8 '/>
         {nav ?<ul className='bg-white mt-7 flex flex-col gap-2 border p-3 cursor-pointer fixed right-5'>
-            <li>About us</li>
-            <li>Services</li>
-            <li>Use Cases</li>
-            <li>Pricings</li>
-            <li>Blogs</li>
+            <a onClick={() => setNav(!nav)} href='#about'>About us</a>
+            <a onClick={() => setNav(!nav)} href='#services'>Services</a>
+            <a onClick={() => setNav(!nav)} href='usecases'>Use Cases</a>
+            <a onClick={() => setNav(!nav)} href='testimonials'>Testimonials</a>
+            <a onClick={() => setNav(!nav)} href='blogs'>Blogs</a>
         </ul>:null}
       </div>
     </div>

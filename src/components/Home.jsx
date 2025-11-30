@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-    <div className='flex flex-col sm:flex-row gap-10 mt-[2vw] sm:mt-10'>
+    <div id='about' className='flex flex-col sm:flex-row gap-10 mt-[2vw] sm:mt-10'>
         <div className=' w-full sm:w-[40vw] flex items-center'>
             <div className='gap-5 flex flex-col'>
             <h1 className='text-[10vw] leading-[13vw] sm:text-[5vw] sm:leading-[6vw]'>Navigating the digital landscape for success</h1>

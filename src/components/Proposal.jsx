@@ -6,7 +6,6 @@ const Proposal = () => {
       <div className='flex flex-col gap-5 sm:gap-3 md:gap-4 lg:gap-5 w-full sm:w-[40vw]'>
         <h1 className='text-xl font-semibold'>Let’s make things happen</h1>
         <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-        <button className='w-fit'></button>
         <button className='py-2 px-2 lg:py-3 lg:px-7 text-xs sm:text-sm md:text-base border rounded-xl bg-black text-white hover:bg-white hover:text-black transition-all ease-in w-40 sm:w-50'>Get your free proposal</button>
       </div>
       <img className='w-[80%] sm:w-[20vw]' src="/proposal.png" alt="img" />
