@@ -32,6 +32,8 @@ to optimization and reporting  Lorem ipsum dolor sit amet consectetur adipisicin
   const for500 = window.innerWidth < 500;
   const for400 = window.innerWidth < 400;
   const for300 = window.innerWidth < 300;
+  const for350 = window.innerWidth < 350;
+  const for450 = window.innerWidth < 450;
 
   const handleLeft = () =>
     setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
@@ -39,16 +41,19 @@ to optimization and reporting  Lorem ipsum dolor sit amet consectetur adipisicin
     setIndex((prev) => (prev + 1) % testimonials.length);
 
   const getTranslateValue = () => {
-    if (for250) return index * 125;
-    if (for300) return index * 122;
-    if (for400) return index * 115;
-    if (for500) return index * 105;
-    if (ismobile) return index * 100;
+    if (for250) return index * 117.5;
+    if (for300) return index * 112;
+    if (for350) return index * 108;
+    if (for400) return index * 105;
+    if (for450) return index * 102;
+    if (for500) return index * 100;
+    if (ismobile) return index * 98;
     if (ismd) return index * 88;
     return index * 50;
   };
 
   return (
+    
     <div id='testimonials' className='py-5 sm:py-10 overflow-x-hidden'>
       <div className='py-5 my-5 sm:my-10 flex flex-col sm:flex-row gap-4 sm:gap-5 md:gap-7 lg:gap-10 items-center '>
         <h1 className='bg-[#B9FF66] text-2xl sm:text-3xl w-fit px-1 rounded-[5px]'>
@@ -60,7 +65,7 @@ to optimization and reporting  Lorem ipsum dolor sit amet consectetur adipisicin
         </p>
       </div>
 
-      <div className='bg-[#191A23] p-5 sm:p-10 text-white rounded-4xl'>
+      <div className='bg-[#191A23] p-4 sm:p-10 text-white rounded-4xl'>
         <div
           className='flex transition-transform gap-5 sm:gap-10'
           style={{ transform: `translateX(-${getTranslateValue()}%) ` }}
@@ -69,16 +74,16 @@ to optimization and reporting  Lorem ipsum dolor sit amet consectetur adipisicin
             <div className='relative' key={index}>
               <div
                 className=' border border-[#B9FF66] rounded-2xl sm:rounded-4xl p-2 min-[300px]:p-5 md:p-7 lg:p-10 text-xs sm:text-base
-                md:h-75 sm:h-60  lg:h-60 sm:w-[70vw] lg:w-[50vw] w-[70vw] h-45 max-[434px]:h-62 max-[300px]:h-60'
+                md:h-75 sm:h-60  lg:h-60 sm:w-[70vw] lg:w-[50vw] w-[70vw] h-45 max-[300px]:w-[69vw] max-[434px]:h-62 max-[300px]:h-65 text-justify'
               >
                 {item.text}
               </div>
-              <div className='sm:w-20 sm:h-20 h-10 w-10 border-b rotate-45 bottom-16 max-[434px]:bottom-22 max-[400px]:bottom-16 max-[377px]:bottom-22 max-[250px]:bottom-23 max-[244px]:bottom-28 sm:bottom-20 left-10 min-[400px]:left-20 sm:left-30 bg-[#191A23] border-r absolute border-[#B9FF66] '></div>
+              <div className='sm:w-20 sm:h-20 h-10 w-10 border-b rotate-45 bottom-15 max-[434px]:bottom-21 max-[400px]:bottom-15 max-[377px]:bottom-21 max-[250px]:bottom-22 max-[244px]:bottom-28 sm:bottom-20 left-10 min-[400px]:left-20 sm:left-30 bg-[#191A23] border-r absolute border-[#B9FF66] '></div>
               <div className='mt-8 sm:mt-16 ml-10 min-[400px]:ml-20 sm:ml-30'>
-                <p className='sm:text-2xl text-xl text-[#B9FF66]'>
+                <p className='sm:text-2xl text-base text-[#B9FF66]'>
                   {item.name}
                 </p>
-                <p>{item.role}</p>
+                <p className="">{item.role}</p>
               </div>
             </div>
           ))}
@@ -88,12 +93,13 @@ to optimization and reporting  Lorem ipsum dolor sit amet consectetur adipisicin
             onClick={() => handleLeft()}
             className='cursor-pointer'
           />
-          <div className='sm:w-50 w-30 flex justify-center gap-5'>
+          <div className='sm:w-50 w-20 flex justify-center gap-5 items-center'>
             {testimonials.map((_, i) => (
               <img
                 key={i}
                 src={`${i === index ? "greenstar.png" : "whitestar.png"} `}
-                alt=''
+                alt='img'
+                className="w-2 h-2 sm:w-5 sm:h-5"
               />
             ))}
           </div>

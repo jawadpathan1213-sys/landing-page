@@ -62,7 +62,7 @@ const Process = () => {
   const [visible, setVisible] = useState("");
   return (
     <div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 text-xs sm:text-base">
             <div className='flex py-5 sm:py-10 flex-col sm:flex-row gap-4 sm:gap-5 md:gap-7 lg:gap-10 items-center '>
         <h1 className='bg-[#B9FF66] text-2xl sm:text-3xl w-fit px-1 rounded-[5px]'>
           Our Working Process
@@ -74,7 +74,7 @@ const Process = () => {
             {
                 array.map((item, index)=>(
                     <div key={index}
-          className={`p-5 sm:p-7 w-full rounded-2xl sm:rounded-3xl ${
+          className={`p-2 sm:p-7 w-full rounded-2xl sm:rounded-3xl ${
             visible === item.id ? "bg-[#B9FF66]" : "bg-[#F3F3F3]"
           } shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)] shadow-black border`}
         >
@@ -86,20 +86,20 @@ const Process = () => {
             </h1>
             <img
               onClick={() => setVisible(item.id)}
-              className={`self-end w-8 sm:w-10 ${visible === item.id ? "hidden" : "flex"}`}
+              className={`self-end w-5 sm:w-10 ${visible === item.id ? "hidden" : "flex"}`}
               src='/plus.png'
               alt='img'
             />
             <img
               onClick={() => setVisible(0)}
-              className={`self-end w-8 sm:w-10 ${visible !== item.id ? "hidden" : "flex"}`}
+              className={`self-end w-5 sm:w-10 ${visible !== item.id ? "hidden" : "flex"}`}
               src='/minus.png'
               alt='img'
             />
           </div>
           {visible === item.id ? (
             <div>
-              <hr className='my-5' />
+              <hr className='my-2 sm:my-5' />
               <p className="text-justify">
                {item.text}
               </p>
