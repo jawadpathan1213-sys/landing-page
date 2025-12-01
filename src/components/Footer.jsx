@@ -20,12 +20,12 @@ const Footer = () => {
        </div>
        <div className='my-5 sm:my-10 flex flex-col sm:flex-row items-center sm:items-start'>
         <div className='sm:text-base flex flex-col gap-3 sm:gap-2 sm:w-[50%] w-full items-center sm:items-start mb-5'>
-            <h1 className='bg-[#B9FF66] text-black px-2 rounded-[5px] w-fit'>Contact</h1>
-            <p>Email: jawadpathan1213@gmail.com</p>
-            <p>+92 322 9672054</p>
+            <h1 className='bg-[#B9FF66] text-black px-2 rounded-[5px] w-fit text-base'>Contact</h1>
+            <p className='text-center sm:text-start'>Email: jawadpathan1213@gmail.com</p>
+            <p>Phone: +92 322 9672054</p>
             <p className='max-w-[300px] text-center sm:text-start'>Address: 23450 Maini, Tehsil Topi, District Swabi, KPK Pakistan</p>
         </div>
-        <div className='sm:w-[50%] h-40 w-full bg-[#292A32] flex  items-center flex-col lg:flex-row p-5 rounded-xl justify-center gap-3 sm:text-base'>
+        <div className='sm:w-[50%] max-[250px]:h-22 h-40 w-full bg-[#292A32] flex  items-center flex-col lg:flex-row p-5 rounded-xl justify-center gap-3 sm:text-base'>
             <input className='outline-none w-full lg:w-[48%] max-[250px]:rounded-[3px] max-[250px]:p-1 p-3 lg:p-4  rounded-[7px]  border border-white min-w-[170px] max-w-[300px]' placeholder='Email' type="email" />
             <button className='bg-[#B9FF66] max-[250px]:p-1 p-3 lg:p-4 max-[250px]:rounded-[3px] rounded-[7px] border border-[#B9FF66] text-black w-full lg:w-[48%] min-w-[170px] max-w-[300px] cursor-pointer'>Subscribe to news</button>
         </div>
