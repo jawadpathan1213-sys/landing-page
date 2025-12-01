@@ -11,7 +11,7 @@ import Contact from './components/Contact'
 
 const All = () => {
   return (
-    <div className='sm:px-[5vw] px-[10vw] lg:px-[7vw]'>
+    <div className='sm:px-[5vw] px-[10vw] lg:px-[7vw] overflow-x-hidden'>
       <Navbar />
       <Home />
       <Services />
