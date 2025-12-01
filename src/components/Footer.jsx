@@ -26,8 +26,8 @@ const Footer = () => {
             <p className='max-w-[300px] text-center sm:text-start'>Address: 23450 Maini, Tehsil Topi, District Swabi, KPK Pakistan</p>
         </div>
         <div className='sm:w-[50%] h-40 w-full bg-[#292A32] flex  items-center flex-col lg:flex-row p-5 rounded-xl justify-center gap-3 sm:text-base'>
-            <input className='outline-none w-full lg:w-[48%] p-3 lg:p-4  rounded-[7px]  border border-white min-w-[200px]' placeholder='Email' type="email" />
-            <button className='bg-[#B9FF66] p-3 lg:p-4 rounded-[7px] border border-[#B9FF66] text-black w-full lg:w-[48%] min-w-[200px] cursor-pointer'>Subscribe to news</button>
+            <input className='outline-none w-full lg:w-[48%] max-[250px]:rounded-[3px] max-[250px]:p-1 p-3 lg:p-4  rounded-[7px]  border border-white min-w-[170px] max-w-[300px]' placeholder='Email' type="email" />
+            <button className='bg-[#B9FF66] max-[250px]:p-1 p-3 lg:p-4 max-[250px]:rounded-[3px] rounded-[7px] border border-[#B9FF66] text-black w-full lg:w-[48%] min-w-[170px] max-w-[300px] cursor-pointer'>Subscribe to news</button>
         </div>
     </div>
         <hr />
