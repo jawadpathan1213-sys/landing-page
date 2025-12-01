@@ -59,7 +59,8 @@ const Team = () => {
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 sm:my-10 gap-5 sm:gap-10 text-xs sm:text-sm md:text-base'>
         {teamarray.map((item, index)=>(
-            <div key={index} className='border p-3 sm:p-7 md:p-10 rounded-4xl shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)] shadow-black'>
+            <div key={index} className='relative border p-3 sm:p-7 md:p-10 rounded-4xl shadow-[0_8px_0px_-5px_rgba(0,0,0,0.3)] shadow-black'>
+                <img className="max-[300px]:right-3 max-[300px]:top-3 absolute w-5 sm:w-7 right-5 top-5" src="linkicon.png" alt="" />
           <div className='flex items-center max-[300px]:flex-col gap-5 max-[300px]:gap-3'>
             <img className='max-[300px]:w-15' src={`${item.img}.png`} alt='img' />
             <h1 className='min-[300px]:self-baseline-last self-start text-xl max-[300px]:text-[17px]'>

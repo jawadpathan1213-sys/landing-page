@@ -5,16 +5,16 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
   return (
     <div className='flex gap-5 flex-col min-[400px]:flex-row justify-between md:items-center py-[5vw]   sm:py-8 lg:py-12 text-[16px] lg:text-[18px] items-start'>
-      <img className='w-35 lg:w-50 flex flex-nowrap' src="/navlogo.png" alt="img" />
+      <img className='w-35 md:w-30 lg:w-45 flex flex-nowrap' src="/navlogo.png" alt="img" />
       <div className='flex flex-col md:flex-row md:items-center gap-7 md:gap-[2vw] '>
-      <ul className='sm:flex hidden items-center gap-4 md:gap-[1.7vw] lg:gap-[2.5vw] '>
+      <ul className='sm:flex hidden items-center gap-4 md:gap-[1.7vw] lg:gap-[2.5vw] sm:text-sm lg:text-base'>
         <a href='#about' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>About us</a>
         <a href='#services' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Services</a>
         <a href='#usecases' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Use Cases</a>
         <a href='#testimonials' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Testimonials</a>
         <a href='#contact' className='hover:text-gray-500 hover:border-gray-300 border-b border-white transition-all ease-in cursor-pointer  '>Contact us</a>
       </ul>
-      <button className='py-2 px-3 lg:py-3 lg:px-7 border rounded-xl hover:bg-black hover:text-white transition-all ease-in'>Request a quote</button>
+      <button className='py-2 px-3 lg:py-3 md:p-1.5 lg:px-7 border rounded-xl hover:bg-black hover:text-white transition-all ease-in'>Request a quote</button>
       </div>
       <div className='fixed sm:hidden'>
         <FaBars onClick={() => setNav(!nav)} className='fixed right-3 cursor-pointer rounded-full bg-gray-100 p-2 hover:bg-gray-300 w-8 h-8 '/>

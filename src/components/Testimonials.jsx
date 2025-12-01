@@ -78,7 +78,7 @@ to optimization and reporting  Lorem ipsum dolor sit amet consectetur adipisicin
               >
                 {item.text}
               </div>
-              <div className='sm:w-20 sm:h-20 h-10 w-10 border-b rotate-45 bottom-15 max-[434px]:bottom-21 max-[400px]:bottom-15 max-[377px]:bottom-21 max-[250px]:bottom-22 max-[244px]:bottom-28 sm:bottom-20 left-10 min-[400px]:left-20 sm:left-30 bg-[#191A23] border-r absolute border-[#B9FF66] '></div>
+              <div className='sm:w-20 sm:h-20 h-10 w-10 border-b rotate-45 bottom-15 max-[434px]:bottom-21 max-[400px]:bottom-15 max-[377px]:bottom-21 max-[250px]:bottom-22 max-[244px]:bottom-27 sm:bottom-20 left-10 min-[400px]:left-20 sm:left-30 bg-[#191A23] border-r absolute border-[#B9FF66] '></div>
               <div className='mt-8 sm:mt-16 ml-10 min-[400px]:ml-20 sm:ml-30'>
                 <p className='sm:text-2xl text-base text-[#B9FF66]'>
                   {item.name}

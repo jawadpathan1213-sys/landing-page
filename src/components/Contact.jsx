@@ -21,15 +21,15 @@ const Contact = () => {
             <div>
 
            <label >Name</label>
-           <input placeholder='name' type="text" className='outline-none p-1 sm:p-3 w-full bg-white sm:rounded-xl rounded-[5px] border' />
+           <input placeholder='Name' type="text" className='outline-none p-1 sm:p-3 w-full bg-white sm:rounded-xl rounded-[5px] border' />
             </div>
             <div>
            <label >Email</label>
-           <input placeholder='email' type="email" className='outline-none p-1 sm:p-3 w-full bg-white sm:rounded-xl rounded-[5px] border' />
+           <input placeholder='Email' type="email" className='outline-none p-1 sm:p-3 w-full bg-white sm:rounded-xl rounded-[5px] border' />
            </div>
            <div>                     
            <label >Message</label>
-           <textarea placeholder='message' type="text" className='outline-none p-1 sm:p-3 w-full bg-white sm:rounded-xl rounded-[5px] border h-40 resize-none box-border' />
+           <textarea placeholder='Message' type="text" className='outline-none p-1 sm:p-3 w-full bg-white sm:rounded-xl rounded-[5px] border h-40 resize-none box-border' />
           
            </div> 
            <button className='w-full  p-3 bg-black hover:bg-white text-white hover:text-black rounded-xl border transition-all ease-in cursor-pointer'>Send Message</button>
