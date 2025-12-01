@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
+import { FiMenu } from 'react-icons/fi'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -16,14 +17,14 @@ const Navbar = () => {
       </ul>
       <button className='py-2 px-3 lg:py-3 md:p-1.5 lg:px-7 border rounded-xl hover:bg-black hover:text-white transition-all ease-in'>Request a quote</button>
       </div>
-      <div className='fixed sm:hidden'>
-        <FaBars onClick={() => setNav(!nav)} className='fixed right-3 cursor-pointer rounded-full bg-gray-100 p-2 hover:bg-gray-300 w-8 h-8 '/>
+      <div className='fixed sm:hidden z-50'>
+        <FiMenu onClick={() => setNav(!nav)} className='fixed right-3 cursor-pointer rounded-full  p-2 hover:bg-gray-300 bg-gray-100 w-8 h-8 '/>
         {nav ?<ul className='bg-white mt-7 flex flex-col gap-2 border p-3 cursor-pointer fixed right-5'>
             <a onClick={() => setNav(!nav)} href='#about'>About us</a>
             <a onClick={() => setNav(!nav)} href='#services'>Services</a>
-            <a onClick={() => setNav(!nav)} href='usecases'>Use Cases</a>
-            <a onClick={() => setNav(!nav)} href='testimonials'>Testimonials</a>
-            <a onClick={() => setNav(!nav)} href='blogs'>Blogs</a>
+            <a onClick={() => setNav(!nav)} href='#usecases'>Use Cases</a>
+            <a onClick={() => setNav(!nav)} href='#testimonials'>Testimonials</a>
+            <a onClick={() => setNav(!nav)} href='#contact'>Contact Us</a>
         </ul>:null}
       </div>
     </div>
